@@ -56,6 +56,7 @@ public class MinecraftLauncher {
         clientUrls.put("1.0.0","https://launcher.mojang.com/v1/objects/b679fea27f2284836202e9365e13a82552092e5d/client.jar");
         clientUrls.put("b1.8.1","https://launcher.mojang.com/v1/objects/6b562463ccc2c7ff12ff350a2b04a67b3adcd37b/client.jar");
         clientUrls.put("b1.7.3","https://launcher.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar");
+        clientUrls.put("a1.2.6","https://launcher.mojang.com/v1/objects/a68c817afd6c05c253ba5462287c2c19bbb57935/client.jar");
 
         natives.put("windows","natives/windows_natives.zip");
         natives.put("linux","natives/linux_natives.zip");
@@ -159,7 +160,7 @@ public class MinecraftLauncher {
 
     }
     public String[] getClientVersions() {
-        return new String[]{"1.5.2", "1.4.7","1.3.2","1.2.5","1.1","1.0.0","b1.8.1","b1.7.3"};
+        return new String[]{"1.5.2", "1.4.7","1.3.2","1.2.5","1.1","1.0.0","b1.8.1","b1.7.3","a1.2.6"};
     }
     public String getMinecraftFolder() {
         String OS = System.getProperty("os.name", "generic").toLowerCase(Locale.ENGLISH);
