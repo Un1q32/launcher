@@ -254,7 +254,7 @@ public class MinecraftLauncher {
             args.add("-Dhttp.proxyHost=betacraft.uk");
             args.add("-Djava.util.Arrays.useLegacyMergeSort=true");
         }
-        args.add("-Xmx256M");
+        args.add("-Xmx1500M");
         if (getJavaVer() <= 11) {
             args.add("-XX:+UseConcMarkSweepGC");
             args.add("-XX:+CMSIncrementalMode");
