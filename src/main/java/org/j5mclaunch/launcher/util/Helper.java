@@ -96,10 +96,13 @@ public class Helper {
             try {
                 File f = new File("/usr/local/opt/curl/bin/curl");
                 File f1 = new File("/opt/local/bin/curl");
+                File f2 = new File("/var/usr/bin/curl");
                 if (f.exists()) {
                     http = new CurlHttpClient("/usr/local/opt/curl/bin/curl");
                 } else if (f1.exists()) {
                     http = new CurlHttpClient("/opt/local/bin/curl");
+                } else if (f2.exists()) {
+                    http = new CurlHttpClient("/var/usr/bin/curl");
                 } else {
                     Runtime rt = Runtime.getRuntime();
                     Process proc = rt.exec("curl -V");
